@@ -1,5 +1,2 @@
-#!/usr/bin/env bash
-# Run Apache on the 265-0 Docker container.
-
-echo "ServerName localhost" >> /etc/apache2.conf
-service apache2 start
+cp /etc/apache2/sites-available/000-default /var/www/html/index.html
+service apache2 restart
